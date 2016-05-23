@@ -1,0 +1,2 @@
+/Users/wlb/Library/Developer/Xcode/DerivedData/WYImageFilter-gmdcsrzwelazizctnptvfqbdnbyt/Build/Products/Debug-iphoneos/WYImageFilter.app
+iPhone Developer
