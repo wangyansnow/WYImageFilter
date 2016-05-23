@@ -189,10 +189,10 @@
 		732E036C1CF2E3FE00B7E723 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 732E036B1CF2E3FE00B7E723 /* OpenGLES.framework */; };
 		732E036E1CF2E40700B7E723 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 732E036D1CF2E40700B7E723 /* AVFoundation.framework */; };
 		732E03701CF2E41400B7E723 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 732E036F1CF2E41400B7E723 /* QuartzCore.framework */; };
-		732E03731CF2E61900B7E723 /* GPUImageBeautifyFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 732E03721CF2E61900B7E723 /* GPUImageBeautifyFilter.m */; };
 		732E03761CF2ED9700B7E723 /* CustomFilter.fsh in Resources */ = {isa = PBXBuildFile; fileRef = 732E03751CF2ED9700B7E723 /* CustomFilter.fsh */; };
 		732E03791CF2F11600B7E723 /* PositionColor.fsh in Resources */ = {isa = PBXBuildFile; fileRef = 732E03771CF2F11600B7E723 /* PositionColor.fsh */; };
 		732E037A1CF2F11600B7E723 /* Threshold.fsh in Resources */ = {isa = PBXBuildFile; fileRef = 732E03781CF2F11600B7E723 /* Threshold.fsh */; };
+		732E037D1CF311BB00B7E723 /* GPUImageBeautifyFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 732E037C1CF311BB00B7E723 /* GPUImageBeautifyFilter.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -548,11 +548,11 @@
 		732E036B1CF2E3FE00B7E723 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
 		732E036D1CF2E40700B7E723 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		732E036F1CF2E41400B7E723 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
-		732E03711CF2E61800B7E723 /* GPUImageBeautifyFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPUImageBeautifyFilter.h; sourceTree = "<group>"; };
-		732E03721CF2E61900B7E723 /* GPUImageBeautifyFilter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GPUImageBeautifyFilter.m; sourceTree = "<group>"; };
 		732E03751CF2ED9700B7E723 /* CustomFilter.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = CustomFilter.fsh; sourceTree = "<group>"; };
 		732E03771CF2F11600B7E723 /* PositionColor.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = PositionColor.fsh; sourceTree = "<group>"; };
 		732E03781CF2F11600B7E723 /* Threshold.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = Threshold.fsh; sourceTree = "<group>"; };
+		732E037B1CF311BB00B7E723 /* GPUImageBeautifyFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPUImageBeautifyFilter.h; sourceTree = "<group>"; };
+		732E037C1CF311BB00B7E723 /* GPUImageBeautifyFilter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GPUImageBeautifyFilter.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -592,8 +592,6 @@
 		732E014A1CF2B70000B7E723 /* WYImageFilter */ = {
 			isa = PBXGroup;
 			children = (
-				732E03711CF2E61800B7E723 /* GPUImageBeautifyFilter.h */,
-				732E03721CF2E61900B7E723 /* GPUImageBeautifyFilter.m */,
 				732E014E1CF2B70000B7E723 /* AppDelegate.h */,
 				732E014F1CF2B70000B7E723 /* AppDelegate.m */,
 				732E01511CF2B70000B7E723 /* ViewController.h */,
@@ -621,6 +619,8 @@
 		732E01651CF2E37B00B7E723 /* GPUImage */ = {
 			isa = PBXGroup;
 			children = (
+				732E037B1CF311BB00B7E723 /* GPUImageBeautifyFilter.h */,
+				732E037C1CF311BB00B7E723 /* GPUImageBeautifyFilter.m */,
 				732E01661CF2E37B00B7E723 /* framework */,
 				732E02BA1CF2E37C00B7E723 /* License.txt */,
 				732E02BB1CF2E37C00B7E723 /* README.md */,
@@ -1237,7 +1237,7 @@
 				732E03091CF2E37C00B7E723 /* GPUImageLevelsFilter.m in Sources */,
 				732E032E1CF2E37C00B7E723 /* GPUImagePrewittEdgeDetectionFilter.m in Sources */,
 				732E031D1CF2E37C00B7E723 /* GPUImageMultiplyBlendFilter.m in Sources */,
-				732E03731CF2E61900B7E723 /* GPUImageBeautifyFilter.m in Sources */,
+				732E037D1CF311BB00B7E723 /* GPUImageBeautifyFilter.m in Sources */,
 				732E03261CF2E37C00B7E723 /* GPUImagePerlinNoiseFilter.m in Sources */,
 				732E014D1CF2B70000B7E723 /* main.m in Sources */,
 				732E03281CF2E37C00B7E723 /* GPUImagePixellateFilter.m in Sources */,
@@ -1318,6 +1318,7 @@
 					"DEBUG=1",
 					"$(inherited)",
 				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
@@ -1329,8 +1330,7 @@
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
-			GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				};
+			};
 			name = Debug;
 		};
 		732E015E1CF2B70000B7E723 /* Release */ = {
@@ -1375,13 +1375,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				INFOPLIST_FILE = WYImageFilter/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.minyan.WYImageFilter;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-			GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				};
+			};
 			name = Debug;
 		};
 		732E01611CF2B70000B7E723 /* Release */ = {
@@ -1415,6 +1415,7 @@
 				732E01611CF2B70000B7E723 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
