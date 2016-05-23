@@ -161,4 +161,6 @@
 #import "GPUImageSingleComponentGaussianBlurFilter.h"
 #import "GPUImageThreeInputFilter.h"
 #import "GPUImageWeakPixelInclusionFilter.h"
+/** 美颜滤镜 **/
+#import "GPUImageBeautifyFilter.h"
 

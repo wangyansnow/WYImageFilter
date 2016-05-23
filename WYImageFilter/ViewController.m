@@ -8,7 +8,6 @@
 
 #import "GPUImage.h"
 #import "ViewController.h"
-#import "GPUImageBeautifyFilter.h"
 
 #define VIDEO_RECT CGRectMake(40, 64, 240, 320)
 
